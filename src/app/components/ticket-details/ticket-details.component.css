@@ -1,0 +1,125 @@
+/* Ticket Details Container */
+.ticket-details-container {
+  max-width: 70%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.ticket-details-container h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Ticket Information */
+.ticket-info {
+  margin-bottom: 15px;
+}
+
+/* Strong Labels */
+.ticket-info strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Horizontal Line */
+.ticket-details-container hr {
+  margin: 20px 0;
+  border: 1px solid #ccc;
+}
+
+/* Comments Section */
+.comments-section {
+  margin-bottom: 20px;
+}
+
+/* Comments Heading */
+.comments-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Comment List */
+.comment-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual Comment Item */
+.comment-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Status Update Section */
+.status-update-section {
+  margin-bottom: 20px;
+}
+
+/* Status Update Label */
+.status-update-section label {
+  margin-right: 10px;
+}
+
+/* Status Update Select */
+.status-select {
+  padding: 8px;
+  border-radius: 3px;
+}
+
+/* Update Status Button */
+.update-status-button {
+  background-color: #3498db;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.update-status-button:hover {
+  background-color: #2980b9;
+}
+
+/* Add Comment Section */
+.add-comment-section {
+  margin-bottom: 20px;
+}
+
+/* Add Comment Label */
+.add-comment-section label {
+  margin-right: 10px;
+}
+
+/* Comment Input */
+.comment-input {
+  padding: 8px;
+  border-radius: 3px;
+}
+
+/* Add Comment Button */
+.add-comment-button {
+  background-color: #3498db;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.add-comment-button:hover {
+  background-color: #2980b9;
+}
+
+/* Loading Message */
+.loading-message {
+  text-align: center;
+  margin-top: 20px;
+  color: #777;
+}

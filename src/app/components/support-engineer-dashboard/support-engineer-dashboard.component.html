@@ -1,0 +1,15 @@
+<div *ngIf="tickets" class="assigned-tickets-container">
+  <h2>Your Assigned Tickets</h2>
+  <ul *ngIf="tickets.length > 0" class="assigned-tickets-list">
+    <li *ngFor="let ticket of tickets" class="ticket-item">
+      <div class="ticket-details">
+        <strong>Title:</strong> {{ ticket.title }}<br>
+        <strong>Text:</strong> {{ ticket.text }}
+      </div>
+      <button (click)="openTicket(ticket)" class="open-ticket-button">Open Ticket</button>
+    </li>
+  </ul>
+  <div *ngIf="tickets.length === 0" class="no-tickets-message">
+    No assigned tickets.
+  </div>
+</div>

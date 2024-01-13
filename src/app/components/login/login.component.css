@@ -1,0 +1,76 @@
+.container-fluid {
+  background-image: url('/assets/login-bg-1.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.logo {
+  margin-top: 80px;
+}
+
+.project_heading {
+  color: #FFFFFF;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+.form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 30px;
+
+  .eye {
+      position: relative;
+      top: -47px;
+      left: 90%;
+  }
+}
+
+.button {
+  width: 50%;
+}
+
+.form-control {
+  height: 48px;
+}
+
+.invalid-text {
+  color: red;
+  display: none;
+}
+
+.show-error {
+  display: block;
+}
+
+.invalid {
+  color: #ff0000;
+  border-color: #ff0000;
+  visibility: visible;
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+      background-image: url('/assets/login-mb-bg-1.svg');
+  }
+
+  .logo {
+      margin-top: 100px;
+  }
+
+  .eye {
+      left: 42%;
+  }
+
+  .form {
+      margin-top: 108px;
+  }
+
+  .button {
+      width: 100%;
+      margin-top: 20px !important;
+  }
+}
+

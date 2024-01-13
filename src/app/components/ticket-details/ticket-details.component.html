@@ -1,0 +1,45 @@
+<div class="ticket-details-container" *ngIf="ticket; else loadingMessage">
+  <h2>{{ ticket.title }}</h2>
+  
+  <div class="ticket-info">
+    <strong>ID:</strong> {{ ticket.id }}<br>
+    <strong>Description:</strong> {{ ticket.text }}<br>
+    <strong>Resolution:</strong> {{ ticket.resolution }}<br>
+    <strong>Client:</strong> {{ ticket.client.name }}
+  </div>
+
+  <hr>
+
+  <div class="comments-section">
+    <h3>Comments</h3>
+    <ul class="comment-list" *ngIf="comments.length > 0">
+      <li *ngFor="let comment of comments" class="comment-item">
+        {{ comment.text }}
+      </li>
+    </ul>
+  </div>
+
+  <hr>
+
+  <div class="status-update-section">
+    <label for="statusSelect">Change Status:</label>
+    <select id="statusSelect" [(ngModel)]="newStatus" class="status-select">
+      <option value="OPEN">Open</option>
+      <option value="CLOSED">Closed</option>
+      <option value="BLOCKED">Blocked</option>
+    </select>
+    <button (click)="changeTicketStatus(newStatus)" class="update-status-button">Update Status</button>
+  </div>
+
+  <div class="add-comment-section">
+    <label for="commentInput">Add Comment:</label>
+    <input id="commentInput" [(ngModel)]="newComment.text" class="comment-input" />
+    <button (click)="addComment(newComment.text)" class="add-comment-button">Add Comment</button>
+  </div>
+</div>
+
+<ng-template #loadingMessage>
+  <div class="loading-message">
+    <p>Loading...</p>
+  </div>
+</ng-template>
